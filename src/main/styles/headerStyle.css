@@ -1,0 +1,31 @@
+.backgroundImage {
+    background-image: url("backgroundImages/backgroundImage.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
+.HeaderText {
+    position: absolute;
+    margin: 20px;
+    padding: 20px;
+    font-size: 1.3rem;
+    text-align: justify;
+    top: 20%;
+    background: rgba(47, 79, 79, 0.84);
+    color: whitesmoke;
+}
+
+@media (max-width: 800px) {
+    .HeaderText {
+        font-size: 1rem;
+        margin: 20px;
+        padding: 20px;
+        top: 10%;
+        text-align: justify;
+        background: rgba(47, 79, 79, 0.74);
+        color: whitesmoke;
+    }
+}

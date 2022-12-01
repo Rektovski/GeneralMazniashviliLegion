@@ -1,38 +1,44 @@
 .App {
-  text-align: center;
+  overflow: hidden;
+  cursor: default;
+  font-family: "Comic Sans MS", monospace, sans-serif, serif;
+
+  /*Todo night mode */
+  /*background: black;*/
+  /*color: whitesmoke;*/
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  color: whitesmoke;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 1s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover {
+  color: whitesmoke;
+  transition: .3s;
+  text-decoration: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Handle */
+::-webkit-scrollbar-thumb {
+  transition: all 1s ease-in-out;
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  transition: .3s;
+  background: #555;
 }
