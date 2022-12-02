@@ -1,3 +1,21 @@
+.LegionPartnerShipBackground {
+    z-index: 112312312;
+    background-image: url("backgroundImages/partnershipImage.jpg"); /* The image used */
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 100vh; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+
 .LegionPartner {
+    color: #ffffff;
+    display: grid;
+    height: 100%;
+    align-items: center;
     margin: 20px;
+}
+
+.LegionPartnerBackColor {
+    background: rgba(24, 100, 61, 0.73);
 }

@@ -1,8 +1,12 @@
 import "../../styles/documentationStyle.css";
 import {Table} from "react-bootstrap";
 import {documents} from "../helper/docsArray";
+import {useContext} from "react";
+import LightContext from "../../context/LightContext";
 
 export default function Documentation() {
+    const {light} = useContext(LightContext);
+
     const whichFormat = (format) => {
         if(format === "Blog" || format === "Youtube" || format === "PDF")return "Link";
         else if(format === "Powerpoint")return "Download";
@@ -12,7 +16,7 @@ export default function Documentation() {
         <>
             <div id={"documentation"} className={'m-2'}>
                 <h3 className={'text-center'}>დოკუმენტაცია</h3>
-                <Table striped bordered hover>
+                <Table striped bordered hover variant={light ? "light" : "dark"}>
                     <thead>
                     <tr>
                         <th>სახელი:</th>
@@ -26,7 +30,7 @@ export default function Documentation() {
                             <tr key={id}>
                                 <td>{item.name}</td>
                                 <td className={'text-center'}>
-                                    <a href={item.url} className={'text-dark'}>{
+                                    <a href={item.url} className={`${light ? "text-dark" : "text-light"}`}>{
                                         whichFormat(item.format)
                                     }</a>
                                 </td>

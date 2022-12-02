@@ -1,12 +1,19 @@
 import "../../styles/navbarStyle.css";
 import logo from "../../images/logo.png";
-import {useState} from "react";
+import {useContext, useState} from "react";
+import {BsSun as SunIcon, BsFillMoonStarsFill as MoonIcon} from "react-icons/bs";
+import LightContext from "../../context/LightContext";
 
 export default function Navbar() {
     const [menu, setMenu] = useState(false);
+    const {light, setLight} = useContext(LightContext);
     const rect1 = {transform: "rotate(405deg)", position: "relative", top: 7, backgroundColor: "white"};
     const rect2 = {transform: "rotate(1485deg)", backgroundColor: "white"};
     const rect3 = {transform: "rotate(-405deg)", position: "relative", top: -7, backgroundColor: "white"};
+
+    const changeLight = () => {
+        setLight(!light);
+    }
 
     return (
         <>
@@ -15,7 +22,10 @@ export default function Navbar() {
                     <img onClick={() => {
                         window.location.replace("/")
                     }} className={`navbarLogo me-2`} src={logo} alt={"logo"}/>
-                    <div className={'NavbarName'}>ლეგიონი</div>
+                    <div className={'NavbarName me-5'}>ლეგიონი</div>
+                    <div onClick={changeLight}>
+                        {light ? <MoonIcon size={30}/> : <SunIcon size={30}/>}
+                    </div>
                 </div>
                 {
                     window.innerWidth > 750 ?
