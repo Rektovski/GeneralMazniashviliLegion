@@ -8,6 +8,7 @@
 }
 
 .helloText {
+    z-index: 4;
     position: absolute;
     align-items: center;
     text-align: center;
@@ -19,7 +20,6 @@
     top: 10vh;
     font-size: 2rem;
     color: #18643d;
-    box-shadow: #000000 0 0 100px 22px;
     background: whitesmoke;
     padding: 10px;
     border-radius: 100px;

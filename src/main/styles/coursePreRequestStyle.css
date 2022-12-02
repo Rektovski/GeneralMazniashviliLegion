@@ -25,25 +25,23 @@
 
 .CoursePreRequestLeft {
     text-align: justify;
-    color:  black;
     margin-bottom: 10px;
     border-radius: 10px 0 10px 0;
     width: 40%;
     padding: 20px;
-    background: #ecf8ff;
+    background: #ee5a0b;
     font-size: 1.5rem;
 }
 
 .CoursePreRequestRight {
     text-align: justify;
-    color:  whitesmoke;
     margin-bottom: 10px;
     border-radius: 0 10px 0 10px;
     position: sticky;
     left: 100%;
     width: 40%;
     padding: 20px;
-    background: #a0bba9;
+    background: #157679;
     font-size: 1.5rem;
 }
 

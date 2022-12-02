@@ -1,4 +1,5 @@
 import "../../styles/contactStyle.css";
+import "../../styles/doorStyle.css";
 import {Alert, Container, Form, Spinner} from "react-bootstrap";
 import emailjs from "emailjs-com";
 import ReactCanvasConfetti from "react-canvas-confetti";
@@ -77,64 +78,78 @@ export default function Contact() {
         <>
             <Container fluid className={'contactBackgroundImage'}>
                 <div id={"contact"} className={'Contact'}>
-                    <Form ref={form} onSubmit={sendEmail} className={'contactForm border rounded m-3 p-3'}>
-                        <h1 className={'text-center'}>
-                            დაგვიკავშირდით:
-                        </h1>
-                        <div>
-                            <div className={'FormLabels'}>
-                                <Form.Group className="mb-3">
-                                    <Form.Label>სახელი:</Form.Label>
-                                    <Form.Control type="text" name={"name"} placeholder="ჩაწერეთ თქვენი სახელი" required/>
-                                </Form.Group>
-
-                                <Form.Group className="mb-3">
-                                    <Form.Label>ელ-ფოსტა:</Form.Label>
-                                    <Form.Control type="email" name={"email"} placeholder="ჩაწერეთ თქვენი ელ-ფოსტა" required/>
-                                </Form.Group>
-
-                                <Form.Group className="mb-3">
-                                    <Form.Label>თემა:</Form.Label>
-                                    <Form.Control type="text" name={"subject"} placeholder="ჩაწერეთ სასურველი თემა" required/>
-                                </Form.Group>
-                            </div>
-
+                    <Form ref={form} onSubmit={sendEmail} className={'contactForm'}>
+                        <div className="wrapper">
+                            <h1 className={'text-center'}>
+                                დაგვიკავშირდით:
+                            </h1>
                             <div>
-                                <Form.Group className="mb-3">
-                                    <Form.Label>ტექსტი:</Form.Label>
-                                    <Form.Control className={'formTextarea'} type={"textarea"} as={"textarea"}
-                                                  name={"text"} placeholder="აკრიფეთ ტექსტი" required/>
-                                </Form.Group>
+                                <div className={'FormLabels'}>
+                                    <Form.Group className="mb-3">
+                                        <Form.Label>სახელი:</Form.Label>
+                                        <Form.Control type="text" name={"name"} placeholder="ჩაწერეთ თქვენი სახელი"
+                                                      required/>
+                                    </Form.Group>
+
+                                    <Form.Group className="mb-3">
+                                        <Form.Label>ელ-ფოსტა:</Form.Label>
+                                        <Form.Control type="email" name={"email"} placeholder="ჩაწერეთ თქვენი ელ-ფოსტა"
+                                                      required/>
+                                    </Form.Group>
+
+                                    <Form.Group className="mb-3">
+                                        <Form.Label>თემა:</Form.Label>
+                                        <Form.Control type="text" name={"subject"} placeholder="ჩაწერეთ სასურველი თემა"
+                                                      required/>
+                                    </Form.Group>
+                                </div>
+
+                                <div>
+                                    <Form.Group className="mb-3 formText">
+                                        <Form.Label>ტექსტი:</Form.Label>
+                                        <Form.Control className={'formTextarea'} type={"textarea"} as={"textarea"}
+                                                      name={"text"} placeholder="აკრიფეთ ტექსტი" required/>
+                                    </Form.Group>
+                                </div>
                             </div>
-                        </div>
-
-                        {
-                            alertSuccess ?
-                                <Alert key={"success"} variant={"success"}>
-                                    <Alert.Heading>მადლობა გამოხმაურებისთვის.</Alert.Heading>
-                                    დაგველოდეთ, დაგიკავშირდებით.
-                                </Alert>
-                                : ""
-                        }
-
-                        <div className={'d-flex'}>
-                            <div className={'flex-fill'}></div>
                             {
-                                loading ?
-                                    <div className={"d-flex align-items-center"}>
-                                        <Spinner style={{color: "lightgray"}} className={'me-2'} animation="grow"
-                                                 role="status"></Spinner>
-                                        <span className="">იტვირთება...</span>
-                                    </div>
-                                    :
-                                    <>
-                                        <button className={'submitHoorayButton'}>გაგზავნა</button>
-                                        <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles}/>
-                                    </>
+                                alertSuccess ?
+                                    <Alert key={"success"} variant={"success"}>
+                                        <Alert.Heading>მადლობა გამოხმაურებისთვის.</Alert.Heading>
+                                        დაგველოდეთ, დაგიკავშირდებით.
+                                    </Alert>
+                                    : ""
                             }
+                            <div className={'d-flex'}>
+                                <div className={'flex-fill'}></div>
+                                {
+                                    loading ?
+                                        <div className={"d-flex align-items-center"}>
+                                            <Spinner style={{color: "lightgray"}} className={'me-2'} animation="grow"
+                                                     role="status"></Spinner>
+                                            <span className="">იტვირთება...</span>
+                                        </div>
+                                        :
+                                        <>
+                                            <button className={'submitHoorayButton'}>გაგზავნა</button>
+                                            <ReactCanvasConfetti refConfetti={getInstance} style={canvasStyles}/>
+                                        </>
+                                }
+                            </div>
+                            <div id="left-door" className="door">
+                                <div className="shape"></div>
+                                <div className="shape"></div>
+                                <div id="left-knob" className="knob"></div>
+                            </div>
+                            <div id="right-door" className="door">
+                                <div className="shape"></div>
+                                <div className="shape"></div>
+                                <div id="right-knob" className="knob"></div>
+                            </div>
                         </div>
                     </Form>
                 </div>
+
             </Container>
         </>
     )

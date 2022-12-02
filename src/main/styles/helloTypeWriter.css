@@ -30,7 +30,7 @@
     font-size: 20px;
     width: 22ch;
     -webkit-animation: type 2s steps(40, end);
-    animation: type 4s steps(40, end);
+    animation: type 2s steps(40, end);
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
