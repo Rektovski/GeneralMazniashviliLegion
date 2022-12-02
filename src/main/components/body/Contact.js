@@ -77,8 +77,6 @@ export default function Contact() {
         <>
             <Container fluid className={'contactBackgroundImage'}>
                 <div id={"contact"} className={'Contact'}>
-                    <figure className="circle"></figure>
-
                     <Form ref={form} onSubmit={sendEmail} className={'contactForm border rounded m-3 p-3'}>
                         <h1 className={'text-center'}>
                             დაგვიკავშირდით:

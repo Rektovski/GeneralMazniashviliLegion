@@ -7,7 +7,7 @@ export default function Structure() {
         <>
             <div className={'m-5'}>
                 {
-                    window.innerWidth > 1280 ?
+                    window.innerWidth > 500 ?
                         <div id={"structure"}>
                             <h2 className={'text-center'}>
                                 2022 წლის განმავლობაში ლეგიონის სტრუქტურა
@@ -21,9 +21,7 @@ export default function Structure() {
                             <h2 className={'text-center'}>
                                 2022 წლის განმავლობაში ლეგიონის სტრუქტურა
                             </h2>
-                            <div className={'text-center'}>
-                                <img className={"structureMobileImage"} src={structureMobileImage} alt={"structure foto"}/>
-                            </div>
+                            <img className={"structureMobileImage"} src={structureMobileImage} alt={"structure foto"}/>
                         </div>
                 }
             </div>

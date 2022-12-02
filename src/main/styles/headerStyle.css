@@ -7,7 +7,33 @@
     background-size: cover;
 }
 
+.helloText {
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 20vw;
+    right: 20vw;
+    width: 40vw;
+    top: 10vh;
+    font-size: 2rem;
+    color: #18643d;
+    box-shadow: #000000 0 0 100px 22px;
+    background: whitesmoke;
+    padding: 10px;
+    border-radius: 100px;
+}
+
+@media (max-width: 551px) {
+    .helloText {
+        left: 0;
+        width: 100%;
+    }
+}
+
 .HeaderText {
+    border-radius: 15px;
     position: absolute;
     margin: 20px;
     padding: 20px;
@@ -18,14 +44,38 @@
     color: whitesmoke;
 }
 
+
+
 @media (max-width: 800px) {
     .HeaderText {
         font-size: 1rem;
-        margin: 20px;
-        padding: 20px;
-        top: 10%;
-        text-align: justify;
+        top: 20%;
+        text-align: unset;
         background: rgba(47, 79, 79, 0.74);
-        color: whitesmoke;
     }
 }
+
+@media (max-width: 450px) {
+    .HeaderText {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 340px) {
+    .HeaderText {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 310px) {
+    .HeaderText {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 290px) {
+    .HeaderText {
+        font-size: 11px;
+    }
+}
+

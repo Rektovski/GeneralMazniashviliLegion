@@ -11,6 +11,7 @@ export default function Documentation() {
     return (
         <>
             <div id={"documentation"} className={'m-2'}>
+                <h3 className={'text-center'}>დოკუმენტაცია</h3>
                 <Table striped bordered hover>
                     <thead>
                     <tr>

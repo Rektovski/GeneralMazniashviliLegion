@@ -31,7 +31,7 @@ export default function Navbar() {
                             <div className={'navbarLinks'}>
                                 <a href={"#legionPartner"}>ანგარიშები</a></div>
                             <div className={'navbarLinks'}>
-                                <a href={"#header"}>ხ.დ.კ</a></div>
+                                <a href={"#faq"}>ხ.დ.კ</a></div>
                             <div className={'navbarLinks'}>
                                 <a href={"#contact"}>კონტაქტი</a>
                             </div>

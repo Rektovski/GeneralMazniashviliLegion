@@ -1,4 +1,5 @@
 import "../../styles/headerStyle.css";
+import "../../styles/helloTypeWriter.css";
 import Navbar from "./Navbar";
 
 export default function Header() {
@@ -6,6 +7,10 @@ export default function Header() {
         <>
             <div id={"header"}  className={'backgroundImage'}>
                 <Navbar/>
+                <div className={'helloText css-typing d-flex justify-content-center align-items-center'}>
+                    <p className={"typerText"}>ვგუშაგობ ერს... მარად!</p>
+                </div>
+
                 <div  className={'HeaderText'}>
                     <p>
                         საქართველოს თავდაცვის სამინისტროს პატრონაჟის ქვეშ და მათთან მჭიდრო ურთიერთობით დამოუკიდებელი

@@ -5,6 +5,7 @@
 }
 
 .structureMobileImage {
+    text-align: center;
+    border: 1px solid gray;
     width: 100%;
-    height: 100vh;
 }

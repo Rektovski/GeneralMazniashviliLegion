@@ -1,20 +1,14 @@
 import './App.css';
 import Header from "./main/components/header/Header";
-import Structure from "./main/components/body/Structure";
-import Course from "./main/components/body/Course";
-import Documentation from "./main/components/body/Documentation";
-import LegionPartner from "./main/components/body/LegionPartner";
-import Contact from "./main/components/footer/Contact";
+import Body from "./main/components/body/Body";
+import Footer from "./main/components/footer/Footer";
 
 export default function App() {
     return (
         <div className="App">
             <Header/>
-            <Structure/>
-            <Course/>
-            <Documentation/>
-            <LegionPartner/>
-            <Contact/>
+            <Body/>
+            <Footer/>
         </div>
     );
 }

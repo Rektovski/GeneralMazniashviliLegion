@@ -1,0 +1,47 @@
+.coursePreRequestSpace {
+    margin: 20px;
+}
+
+.CoursePreRequestText {
+    margin: 20px;
+    text-align: justify;
+}
+
+.CoursePreRequestLeft {
+    text-align: justify;
+    color:  black;
+    margin-bottom: 10px;
+    border-radius: 10px 0 10px 0;
+    width: 40%;
+    padding: 20px;
+    background: #ecf8ff;
+    font-size: 1.5rem;
+}
+
+.CoursePreRequestRight {
+    text-align: justify;
+    color:  whitesmoke;
+    margin-bottom: 10px;
+    border-radius: 0 10px 0 10px;
+    position: sticky;
+    left: 100%;
+    width: 40%;
+    padding: 20px;
+    background: #a0bba9;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1280px) {
+    .CoursePreRequestLeft {
+        justify-content: space-around;
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .CoursePreRequestRight {
+        text-align: center;
+        width: 100%;
+        font-size: 1.2rem;
+    }
+}
