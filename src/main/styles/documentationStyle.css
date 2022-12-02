@@ -1,0 +1,9 @@
+.Documentation {
+    margin: 100px
+}
+
+@media (max-width: 500px) {
+    .Documentation {
+        margin: 20px;
+    }
+}

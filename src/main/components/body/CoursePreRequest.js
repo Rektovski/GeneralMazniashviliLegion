@@ -11,7 +11,7 @@ export default function CoursePreRequest() {
                     ვისთანაც დავრეკავთ მითითებულ ნომერზე!
                 </div>
 
-                <div className={''}>
+                <div className={'PreREQTags'}>
                     <div className={'CoursePreRequestLeft'}>
                         <h3 className={'text-center'}>ასაკი</h3>
                         14-21 წელი.

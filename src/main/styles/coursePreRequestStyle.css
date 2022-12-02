@@ -1,5 +1,21 @@
 .coursePreRequestSpace {
-    margin: 20px;
+    margin: 100px;
+}
+
+@media (max-width: 500px) {
+    .coursePreRequestSpace {
+        margin: 20px;
+    }
+}
+
+.PreREQTags {
+    margin: 100px;
+}
+
+@media (max-width: 500px) {
+    .PreREQTags {
+        margin: 20px;
+    }
 }
 
 .CoursePreRequestText {
