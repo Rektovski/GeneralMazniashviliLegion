@@ -2,8 +2,10 @@
     margin: 100px;
 }
 
+
 @media (max-width: 500px) {
     .QA {
         margin: 20px;
+        font-size: 12px;
     }
 }

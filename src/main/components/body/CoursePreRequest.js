@@ -4,6 +4,7 @@ export default function CoursePreRequest() {
     return (
         <>
             <div className={'coursePreRequestSpace'}>
+                <h2 className={'text-center'}>კურსზე მოხვედრის წინაპირობები</h2>
                 <div className={'CoursePreRequestText'}>
                     კურსზე მოხვედრის მსურველებმა უნდა შეავსოთ ანკეტა (არასრულწლოვნებმა შეავსებინეთ მშობელს),
                     დაგიკავშირდებით მითითებულ ტელეფონის ნომერზე და შეგატყობინებთ ღია კარის, პირველი საველე გასვლის დროს

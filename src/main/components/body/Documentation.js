@@ -8,20 +8,24 @@ export default function Documentation() {
     const {light} = useContext(LightContext);
 
     const whichFormat = (format) => {
-        if(format === "Blog" || format === "Youtube" || format === "PDF")return "Link";
-        else if(format === "Powerpoint")return "Download";
+        if (format === "Blog" || format === "Youtube" || format === "PDF") return "Link";
+        else if (format === "Powerpoint") return "Download";
     }
 
     return (
         <>
             <div id={"documentation"} className={'Documentation'}>
-                <h3 className={'text-center'}>დოკუმენტაცია</h3>
+                <h3 className={'text-center my-5'}>დოკუმენტაცია</h3>
                 <Table striped bordered hover variant={light ? "light" : "dark"}>
                     <thead>
                     <tr>
                         <th>სახელი:</th>
                         <th className={'text-center'}>ლინკი</th>
-                        <th className={'text-center'}>ფორმატი</th>
+                        {
+                            window.innerWidth > 430 ?
+                                <th className={'text-center'}>ფორმატი</th>
+                                : ""
+                        }
                     </tr>
                     </thead>
                     <tbody>
@@ -34,7 +38,11 @@ export default function Documentation() {
                                         whichFormat(item.format)
                                     }</a>
                                 </td>
-                                <td className={'text-center'}>{item.format}</td>
+                                {
+                                    window.innerWidth > 430 ?
+                                        <td className={'text-center'}>{item.format}</td>
+                                        : ""
+                                }
                             </tr>
                         ))
                     }

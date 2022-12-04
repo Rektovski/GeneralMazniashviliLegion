@@ -9,7 +9,7 @@ export default function Structure() {
                 {
                     window.innerWidth > 500 ?
                         <div id={"structure"}>
-                            <h2 className={'text-center'}>
+                            <h2 className={'text-center m-2 p-5'}>
                                 2022 წლის განმავლობაში ლეგიონის სტრუქტურა
                             </h2>
                             <div className={'text-center'}>

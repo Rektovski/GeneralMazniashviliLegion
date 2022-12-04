@@ -7,24 +7,6 @@
     background-size: cover;
 }
 
-.helloText {
-    z-index: 4;
-    position: absolute;
-    align-items: center;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    left: 20vw;
-    right: 20vw;
-    width: 40vw;
-    top: 10vh;
-    font-size: 2rem;
-    color: #18643d;
-    background: whitesmoke;
-    padding: 10px;
-    border-radius: 100px;
-}
-
 @media (max-width: 551px) {
     .helloText {
         left: 0;
@@ -33,49 +15,28 @@
 }
 
 .HeaderText {
-    border-radius: 15px;
     position: absolute;
-    margin: 20px;
-    padding: 20px;
-    font-size: 1.3rem;
-    text-align: justify;
-    top: 20%;
-    background: rgba(47, 79, 79, 0.84);
-    color: whitesmoke;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    text-align: center;
+    font-size: 3rem;
+    background: rgba(21, 118, 121, 0.87);
+    color: #ffcb67;
 }
 
-
-
-@media (max-width: 800px) {
+@media (max-width: 360px) {
     .HeaderText {
-        font-size: 1rem;
-        top: 20%;
-        text-align: unset;
-        background: rgba(47, 79, 79, 0.74);
+        font-size: 1.5rem;
     }
 }
 
-@media (max-width: 450px) {
-    .HeaderText {
-        font-size: 15px;
-    }
-}
 
-@media (max-width: 340px) {
-    .HeaderText {
-        font-size: 14px;
-    }
+.HeaderTextInside {
+    background: darkgreen;
+    box-shadow: aliceblue 0 0 10px 10px;
 }
-
-@media (max-width: 310px) {
-    .HeaderText {
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 290px) {
-    .HeaderText {
-        font-size: 11px;
-    }
-}
-

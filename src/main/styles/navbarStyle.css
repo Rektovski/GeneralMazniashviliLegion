@@ -1,25 +1,13 @@
 .Navbar {
     position: fixed;
-    width: 100vw;
+    width: 100%;
     padding: 5px;
     color: whitesmoke;
     z-index: 1111;
     transition: 1s all ease-in-out;
-    background: rgba(47, 79, 79, 0.21);
+    background: rgba(2, 0, 0, 0.75);
 }
 
-@media (min-width: 720px) {
-    .Navbar:hover {
-        transition: .3s;
-        background: rgba(47, 79, 79, 0.49);
-    }
-}
-
-@media (max-width: 750px){
-    .Navbar {
-        background: rgba(215, 205, 205, 0.85);
-    }
-}
 
 .NavbarName {
     font-size: 2rem;
@@ -34,17 +22,26 @@
     z-index: 1;
 }
 
+.NavbarBurger {
+    margin-right: 10px;
+}
+
 .navbarLinks {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 1s ease-in-out;
     margin-left: 10px;
     margin-right: 10px;
+    border: 0;
+    font-size: 1.4rem;
 }
 
 .navbarLinks:hover {
     transition: .3s;
+    border: 0;
     background: #d02828;
-    border: 1px solid transparent;
     border-radius: 5px;
     padding-left: 10px;
     padding-right: 10px;
@@ -81,29 +78,33 @@
 
 .rectangle1, .rectangle2, .rectangle3 {
     height: 2px;
-    width: 33px;
-    background: black;
+    width: 44px;
+    background: #ffffff;
     margin-bottom: 5px;
     transition: all 1s ease-in-out;
 }
 
-@keyframes Menu {
-    0% {
-        height: 0;
-    }
-    100% {
-        height: 315px;
-    }
+.rectangle1, .rectangle3 {
+    color: red;
+}
+
+.rectangle2 {
+    color: white
 }
 
 .menuNavbarLinks {
     animation: 1s ease-in-out Menu;
-    position: absolute;
+    position: fixed;
     z-index: -1;
     background: rgba(0, 0, 0, 0.75);
+    border: 0;
     color: whitesmoke;
-    width: 100vw;
+    font-size: 2rem;
+    display: grid;
     top: 0;
     left: 0;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
     text-align: center;
 }

@@ -28,7 +28,7 @@
     margin-bottom: 10px;
     border-radius: 10px 0 10px 0;
     width: 40%;
-    padding: 20px;
+    padding: 10px;
     background: #ee5a0b;
     font-size: 1.5rem;
 }
@@ -40,7 +40,7 @@
     position: sticky;
     left: 100%;
     width: 40%;
-    padding: 20px;
+    padding: 10px;
     background: #157679;
     font-size: 1.5rem;
 }

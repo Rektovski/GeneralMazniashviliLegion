@@ -10,7 +10,7 @@ export default function Course() {
                 <Row>
                     {
                         sylabus.map((item, id) => (
-                            <Col className={'CourseCard'} key={id} sm={12} md={6} lg={4} xl={4} xxl={3}>
+                            <Col className={'CourseCard g-5'} key={id} sm={12} md={6} lg={4} xl={4} xxl={3}>
                                 <img className={"CourseImage"} src={item.image} alt={'courseSylabusFoto'}/>
                                 <div>{item.description}</div>
                             </Col>

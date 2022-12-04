@@ -10,6 +10,17 @@ export default function Navbar() {
     const rect1 = {transform: "rotate(405deg)", position: "relative", top: 7, backgroundColor: "white"};
     const rect2 = {transform: "rotate(1485deg)", backgroundColor: "white"};
     const rect3 = {transform: "rotate(-405deg)", position: "relative", top: -7, backgroundColor: "white"};
+    const dayStyle = {
+        background: "darkcyan",
+        padding: "7px",
+        borderRadius: "100px"
+    }
+    const nightStyle = {
+        background: "darkslategray",
+        color: "#ffea2f",
+        padding: "7px",
+        borderRadius: "100px"
+    }
 
     const changeLight = () => {
         setLight(!light);
@@ -23,12 +34,13 @@ export default function Navbar() {
                         window.location.replace("/")
                     }} className={`navbarLogo me-2`} src={logo} alt={"logo"}/>
                     <div className={'NavbarName me-5'}>ლეგიონი</div>
-                    <div onClick={changeLight}>
-                        {light ? <MoonIcon size={30}/> : <SunIcon size={30}/>}
+                    <div onClick={changeLight} style={light ? dayStyle : nightStyle}>
+                        {light ? <MoonIcon className={'moonIcon'} size={30}/> :
+                            <SunIcon className={'sunIcon'} size={30}/>}
                     </div>
                 </div>
                 {
-                    window.innerWidth > 750 ?
+                    window.innerWidth > 1280 ?
                         <>
                             <div className={'navbarLinks'}>
                                 <a href={"#header"}>ჩვენს შესახებ</a></div>

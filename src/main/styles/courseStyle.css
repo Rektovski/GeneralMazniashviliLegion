@@ -14,7 +14,6 @@
     z-index: 1;
     transition: .3s;
     scale: 1.1;
-    box-shadow: #cccccc 0 0 222px 10px;
 }
 
 .CourseImage {
