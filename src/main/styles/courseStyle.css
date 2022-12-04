@@ -2,21 +2,29 @@
     margin: 20px;
 }
 
-.CourseCard {
+.CourseHead {
+    font-size: 20px;
+    padding: 20px;
+}
+
+.SylabusCol {
     padding: 20px;
     text-align: center;
     border-radius: 25px;
-    height: 400px;
     transition: all 1s ease-in-out;
 }
 
-.CourseCard:hover {
+.SylabusCol:hover {
     z-index: 1;
     transition: .3s;
     scale: 1.1;
 }
 
 .CourseImage {
-    height: 300px;
+    height: 200px;
     width: 100%;
+}
+
+.CourseCard {
+    height: 400px;
 }

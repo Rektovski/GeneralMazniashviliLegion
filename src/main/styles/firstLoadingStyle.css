@@ -10,17 +10,3 @@
     align-items: center;
     background: white;
 }
-{/*
-position fixed
-gives us opportunity to hide materials while loading first laoder..
-without fixed we will take absolute. which means.. if you scroll down
-while loading is going you will see content behind loading which is not finished yet.
-*/}
-
-
-@media (max-width: 720px) {
-    .loading-image {
-        height: 10rem;
-        width: 10rem;
-    }
-}

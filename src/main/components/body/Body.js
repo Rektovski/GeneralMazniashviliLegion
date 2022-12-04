@@ -1,4 +1,4 @@
-import Structure from "./Structure";
+import News from "./News";
 import Course from "./Course";
 import CoursePreRequest from "./CoursePreRequest";
 import Documentation from "./Documentation";
@@ -8,7 +8,7 @@ import FastAnswerQuestion from "./FastAnswerQuestion";
 export default function Body() {
     return (
         <>
-            <Structure/>
+            <News/>
             <Course/>
             <CoursePreRequest/>
             <Documentation/>

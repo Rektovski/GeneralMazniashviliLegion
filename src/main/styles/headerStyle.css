@@ -14,7 +14,7 @@
     }
 }
 
-.HeaderText {
+.Header {
     position: absolute;
     top: 0;
     left: 0;
@@ -24,7 +24,6 @@
     place-items: center;
     align-items: center;
     text-align: center;
-    font-size: 3rem;
     background: rgba(21, 118, 121, 0.87);
     color: #ffcb67;
 }
@@ -36,7 +35,34 @@
 }
 
 
-.HeaderTextInside {
+.HeaderText {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     background: darkgreen;
     box-shadow: aliceblue 0 0 10px 10px;
+    border-radius: 20px;
+    font-size: 2vw;
+}
+
+.HeaderPhrase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: crimson;
+    border-radius: 20px;
+    padding: 20px;
+    font-size: 2vw;
+}
+
+@media (max-width: 600px){
+    .HeaderText, .HeaderPhrase {
+        font-size: 5vw;
+    }
+}
+
+.HeaderLogo {
+    width: 70%;
 }

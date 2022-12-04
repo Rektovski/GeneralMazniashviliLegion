@@ -1,0 +1,10 @@
+.News {
+    margin: 20px;
+    height: 400px;
+    overflow-y: auto;
+}
+
+.NewsHead {
+    font-size: 20px;
+    padding: 20px;
+}

@@ -5,9 +5,9 @@ export default function LegionPartner() {
         <>
             <div id={"legionPartner"} className={'LegionPartner LegionPartnerShipBackground'}>
                 <div className={'LegionPartnerBackColor'}>
-                    <h4 className={'text-center mt-2 p-3'}>
+                    <div className={'PartnerHead text-center mt-2 p-3'}>
                         გახდი ლეგიონის პარტნიორი
-                    </h4>
+                    </div>
                     <div className={'p-2 font-monospace'}>
                         <p className={'text-center'}>
                             ლეგიონი არის სახალხო პროექტი და ჩვენი ყველა აქტივობა იყო, არის და იქნება უფასო.

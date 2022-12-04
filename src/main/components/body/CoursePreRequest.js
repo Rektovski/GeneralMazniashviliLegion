@@ -4,7 +4,7 @@ export default function CoursePreRequest() {
     return (
         <>
             <div className={'coursePreRequestSpace'}>
-                <h2 className={'text-center'}>კურსზე მოხვედრის წინაპირობები</h2>
+                <div className={'CoursePreHead text-center'}>კურსზე მოხვედრის წინაპირობები</div>
                 <div className={'CoursePreRequestText'}>
                     კურსზე მოხვედრის მსურველებმა უნდა შეავსოთ ანკეტა (არასრულწლოვნებმა შეავსებინეთ მშობელს),
                     დაგიკავშირდებით მითითებულ ტელეფონის ნომერზე და შეგატყობინებთ ღია კარის, პირველი საველე გასვლის დროს
@@ -20,6 +20,18 @@ export default function CoursePreRequest() {
                     <div className={'CoursePreRequestRight'}>
                         <h3 className={'text-center'}>ღირებულება</h3>
                         უფასო
+                    </div>
+                    <div className={'CoursePreRequestLeft'}>
+                        <h3 className={'text-center'}>საკვები</h3>
+                        თქვენი
+                    </div>
+                    <div className={'CoursePreRequestRight'}>
+                        <h3 className={'text-center'}>დღე</h3>
+                        შაბათი/კვირა
+                    </div>
+                    <div className={'CoursePreRequestLeft'}>
+                        <h3 className={'text-center'}>დღიური გეგმა</h3>
+                        6-8 საათიანი სწავლება
                     </div>
                 </div>
             </div>

@@ -1,10 +1,10 @@
 import "../../styles/contactStyle.css";
-import "../../styles/doorStyle.css";
-import {Alert, Container, Form, Spinner} from "react-bootstrap";
+import {Container, Form} from "react-bootstrap";
 import emailjs from "emailjs-com";
 import ReactCanvasConfetti from "react-canvas-confetti";
 import {useCallback, useEffect, useRef, useState} from "react";
 import {canvasStyles, getAnimationSettings} from "../helper/contactService";
+import {Alert, AlertIcon, Spinner} from "@chakra-ui/react";
 
 export default function Contact() {
     const [loading, setLoading] = useState(false);
@@ -30,7 +30,7 @@ export default function Contact() {
         // now we need alert counter to hide it for example after 3 seconds...
         setTimeout(() => {
             setAlertSuccess(false);
-        }, 5000);
+        }, 10000);
 
         e.target.reset();
     };
@@ -79,9 +79,9 @@ export default function Contact() {
             <Container fluid className={'contactBackgroundImage'}>
                 <div id={"contact"} className={'Contact'}>
                     <Form ref={form} onSubmit={sendEmail} className={'contactForm'}>
-                        <h1 className={'text-center'}>
+                        <div className={'ContactFormHead text-center'}>
                             დაგვიკავშირდით:
-                        </h1>
+                        </div>
                         <div className={'FormLabels'}>
                             <Form.Group className="mb-3">
                                 <Form.Label>სახელი:</Form.Label>
@@ -111,9 +111,9 @@ export default function Contact() {
                         </div>
                         {
                             alertSuccess ?
-                                <Alert key={"success"} variant={"success"}>
-                                    <Alert.Heading>მადლობა გამოხმაურებისთვის.</Alert.Heading>
-                                    დაგველოდეთ, დაგიკავშირდებით.
+                                <Alert status='success' variant='solid'>
+                                    <AlertIcon />
+                                    წარმატებით გაიგზავნა!
                                 </Alert>
                                 : ""
                         }

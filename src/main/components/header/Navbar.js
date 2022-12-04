@@ -45,7 +45,7 @@ export default function Navbar() {
                             <div className={'navbarLinks'}>
                                 <a href={"#header"}>ჩვენს შესახებ</a></div>
                             <div className={'navbarLinks'}>
-                                <a href={"#structure"}>სტრუქტურა</a></div>
+                                <a href={"#news"}>სიახლე</a></div>
                             <div className={'navbarLinks'}>
                                 <a href={"#course"}>კურსები</a></div>
                             <div className={'navbarLinks'}>
